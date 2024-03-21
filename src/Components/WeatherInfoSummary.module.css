@@ -1,0 +1,134 @@
+.current-summary-section {
+  padding: 17rem 0 8.3rem 0;
+}
+
+.current-summary-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.current-summary-conditions {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.city-date-row {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.city-name {
+  font-weight: 700;
+  font-size: 6.4rem;
+}
+
+.date {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.icon-weather-state-row {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.weather {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.weather-icon {
+  width: 10rem;
+}
+
+.today-forecast {
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.today-forecast .temp {
+  font-weight: 700;
+  font-size: 14.4rem;
+  display: flex;
+  justify-content: end;
+}
+.today-forecast .temps-box {
+  font-weight: 400;
+  font-size: 4.8rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: end;
+}
+.today-forecast .low-temp {
+  opacity: 0.75;
+}
+
+.today-forecast .forecast {
+  font-weight: 600;
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .current-summary-section {
+    padding: 14rem 0 6rem 0;
+  }
+
+  .current-summary-container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .current-summary-conditions {
+    width: 100%;
+    gap: 2rem;
+  }
+
+  .city-name {
+    font-size: 4.2rem;
+  }
+
+  .date {
+    font-weight: 400;
+  }
+
+  .icon-weather-state-row {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .weather-icon {
+    width: 7rem;
+  }
+
+  .weather {
+    font-size: 2.4rem;
+  }
+
+  .today-forecast {
+    width: 100%;
+  }
+  .temps-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .today-forecast .temp {
+    font-size: 7rem;
+  }
+
+  .today-forecast .temps-box {
+    font-size: 3rem;
+    gap: 0.5rem;
+  }
+}

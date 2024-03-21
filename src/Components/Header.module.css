@@ -1,0 +1,47 @@
+header {
+  padding-top: 4rem;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .app-name {
+  font-weight: 700;
+  font-size: 3.6rem;
+}
+
+header nav .celsius-btn,
+header nav .fahrenheit-btn {
+  padding: 10px 30px;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #ffff;
+  border: 0;
+  background-color: transparent;
+}
+
+header nav .celsius-btn.active,
+header nav .fahrenheit-btn.active {
+  background-color: hsla(0, 0%, 100%, 0.25);
+  border-left: 2px solid white;
+}
+
+@media screen and (max-width: 768px) {
+  header nav .app-name {
+    font-weight: 600;
+    font-size: 2.6rem;
+  }
+
+  header nav .celsius-btn,
+  header nav .fahrenheit-btn {
+    padding: 0.8rem 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #ffff;
+    border: 0;
+    background-color: transparent;
+  }
+}

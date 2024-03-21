@@ -1,0 +1,8 @@
+.app {
+  width: 100vw;
+  min-height: 100vh;
+  background: url('/background.webp') no-repeat top center;
+  background-size: cover;
+
+  background-color: rgb(29, 167, 226);
+}

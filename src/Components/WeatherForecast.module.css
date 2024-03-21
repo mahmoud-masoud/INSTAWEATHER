@@ -1,0 +1,77 @@
+.forecast-section {
+  overflow: hidden;
+}
+
+.btns-wrapper {
+  display: flex;
+  gap: 6rem;
+  border-bottom: 1px solid rgb(255, 255, 255, 0.5);
+}
+.hourly-btn,
+.daily-btn {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: rgb(255, 255, 255, 0.75);
+  background: none;
+  border: none;
+  padding-bottom: 1.5rem;
+}
+
+.hourly-btn.active,
+.daily-btn.active {
+  color: #ffffff;
+  border-bottom: 3px solid white;
+}
+
+.weather-instances-wrapper {
+  display: flex;
+  gap: 7rem;
+  overflow-x: scroll;
+  padding: 3.5rem 0 3.5rem 0;
+  position: relative;
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: rgb(255, 255, 255, 0.5);
+  transform: translateY(-500%);
+}
+
+.weather-instances-wrapper::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: none;
+  height: 1px;
+}
+
+.weather-instances-wrapper::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.weather-instances-wrapper::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: white;
+}
+.weather-instances-wrapper::-webkit-scrollbar-thumb:hover {
+  border-radius: 10px;
+  background: #dcdcdc;
+}
+
+.forecast-instance {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.forecast-time {
+  font-size: 2.4rem;
+}
+
+.forecast-condition-icon {
+  max-width: 6.6rem;
+}
+.forecast-temp {
+  font-size: 3.6rem;
+  font-weight: 400;
+}
